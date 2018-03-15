@@ -17,8 +17,16 @@ h2 {
     font-size: 20px;
 }
 
-hr {
-    border-width: 2px;
+a:link {
+    color: #777777;
+}
+
+a:visited {
+    color: #777777;
+}
+
+a:hover {
+    color: #4aaaa5;
 }
 
 header {
@@ -37,11 +45,13 @@ footer {
     height: 60px;
     color: white;
     text-align: center;
+    z-index: 2;
 }
 
 footer span {
     position: absolute;
     bottom: 0;
+    right: 43%;
     color: #efefef;
     font-size: 12px;
     margin-bottom: 10px;
@@ -64,6 +74,10 @@ textarea {
     border-color: #dddddd;
 }
 
+em {
+    font-style: italic;
+}
+
 .container {
     max-width: 960px;
     box-sizing: border-box;
@@ -78,6 +92,14 @@ textarea {
 
 .portimage {
     position: relative;
+    width: 275px;
+    height: 205px;
+    float: left;
+    margin: 0 40px 55px 0;
+}
+
+.newrow {
+    clear: both;
 }
 
 .portoverlay {
@@ -86,12 +108,13 @@ textarea {
     font-family: 'Georgia', Times, Times New Roman, serif;
     color: #ffffff;
     font-size: 20px;
-    font-weight: bold;
     text-align: center;
-    line-height: 40px;
+    line-height: 50px;
     margin: 0 auto;
     width: 275px;
     z-index: 1;
+    top: 145px;
+
 }
 
 #name {
@@ -121,6 +144,8 @@ textarea {
     border: solid #efefef 2px;
     margin: 40px auto;
     padding: 30px;
+    overflow: auto;
+
 }
 
 #content-text {
@@ -134,6 +159,8 @@ textarea {
     float: left;
     margin: 10px 20px 20px 0;
 }
+
+/* Change color of placeholder text in forms */
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #ababab;
