@@ -13,6 +13,10 @@ h1 {
     line-height: 2;
 }
 
+h1#social {
+    font-size: 22px;
+}
+
 h2 {
     font-size: 20px;
 }
@@ -86,6 +90,20 @@ em {
     margin: 0 auto;
 }
 
+.container-sm {
+    width: 650px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    float: left;
+}
+
+.container-social {
+    width: 270px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    float: right;
+}
+
 .button {
     color: white;
     background-color: #4aaaa5;
@@ -117,6 +135,10 @@ em {
     z-index: 1;
     top: 145px;
 
+}
+
+.icons {
+    margin: 20px 5px 20px 0;
 }
 
 #name {
@@ -157,10 +179,15 @@ em {
     font-size: 18px;
 }
 
+#social-icons {
+    border-top: solid #cccccc 2px;
+}
+
 #profile-image {
     float: left;
     margin: 10px 20px 20px 0;
 }
+
 
 /* Change color of placeholder text in forms */
 
